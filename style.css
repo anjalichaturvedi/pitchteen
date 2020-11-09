@@ -15,7 +15,7 @@ body {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  margin: 20px auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
     typing 3.5s steps(30, end),
@@ -23,9 +23,10 @@ body {
 }
 .center {
   margin: auto;
-  width: 25%;
+  width: 43%;
   border: 3px solid #272823;
   padding: 10px;
+  font-size: 50px;
 }
 /* The typing effect */
 @keyframes typing {
@@ -37,4 +38,39 @@ body {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange }
+}
+
+p {
+  margin: 25px 50px;
+  font-family: monospace;
+  letter-spacing: .10em;
+}
+
+h1 {
+  margin: 25px 50px;
+  font-family: monospace;
+  letter-spacing: .10em;
+}
+
+h3{
+  font-size: 20px;
+}
+
+.button {
+  margin: 25px 50px;
+  length: 100px;
+  width: 50px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+  float:left;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+
+.button:hover {
+  transform: scale(1.10); /* (150% zoom)*/
 }
