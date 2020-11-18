@@ -3,14 +3,14 @@ body {
   padding-top: 5em;
   justify-content: center;
   color: #fff;
-  font-family: monospace;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: .15em;
 }
 
 p {
   font-size: 16px;
   margin: 1em 2em;
-  font-family: monospace;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: .10em;
 }
 
@@ -18,13 +18,13 @@ h1 {
   font-size: 100px;
   font-weight: bold;
   margin: 25px 50px;
-  font-family: monospace;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: .10em;
 }
 
 h2 {
   font-size: 40px;
-  font-family: monospace;
+  font-family:'Montserrat', sans-serif;
   letter-spacing: .10em;
 }
 
@@ -32,13 +32,13 @@ h3{
   font-size: 20px;
 }
 
-.typewriter h1 {
+.typewriter h3 {
   color: #fff;
-  font-family: monospace;
+  font-family: 'Montserrat', sans-serif;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typewriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  margin: 20px auto; /* Gives that scrolling effect as the typing happens */
+  margin: 0px auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation:
     typing 3.5s steps(20, end),
@@ -47,9 +47,18 @@ h3{
 
 .center {
   margin: auto;
+  width: 23%;
+  text-align: center;
+  border: 1px solid #272823
+  padding: 7px;
+  font-size: 50px;
+}
+
+.qa {
+  margin: auto;
   width: 70%;
   text-align: center;
-  border: 3px solid #272823;
+  border: 2px solid #272823
   padding: 10px;
   font-size: 50px;
 }
@@ -60,7 +69,7 @@ h3{
     font-size: 9vw;
   }
   .center {
-    width: 80%;
+    width: 40%;
   }
 }
 
@@ -68,12 +77,6 @@ h3{
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
 }
 
 .about {
@@ -165,3 +168,17 @@ h3{
 .button:hover {
   transform: scale(1.10);
 }
+
+.hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid orange;
+    border-bottom: 1px solid orange);
+}
+
+.image { 
+float: left;
+height: 500px;
+width: 400px;
+}
+
