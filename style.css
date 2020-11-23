@@ -1,10 +1,17 @@
 body {
   background: #272823;
   padding-top: 5em;
+  padding-bottom: 5em;
   justify-content: center;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: .15em;
+}
+
+.container {
+  /*Prevents content from stretching over-width on mobile*/
+  overflow-x: hidden;
+  margin-top: 2em;
 }
 
 p {
@@ -45,27 +52,27 @@ h3{
     blink-caret .5s step-end infinite;
 }
 
+@media only screen and (min-width: 925px) {
+  .mobile-br {
+    display: none;
+  }
+}
+
 .center {
-  margin: auto;
+  margin: 0 auto;
   width: 23%;
   text-align: center;
-  border: 1px solid #272823
+  border: 1px solid #272823;
   padding: 7px;
   font-size: 50px;
 }
 
-.qa {
-  margin: auto;
-  width: 70%;
-  text-align: center;
-  border: 2px solid #272823
-  padding: 10px;
-  font-size: 50px;
-}
-
 @media only screen and (max-width: 1100px) {
-  /*apply these rules if screen width < 1575px*/
-  .typewriter h1 {
+  /*apply these rules if screen width < 1100px*/
+  h1 {
+    font-size: 13vw;
+  }
+  h2 {
     font-size: 9vw;
   }
   .center {
@@ -86,16 +93,38 @@ h3{
 
 .about h3 {
   text-transform: uppercase;
+  padding: 0 30px;
 }
 
-.about img {
-  width: inherit;
+#about-image {
+  width: 30vw;
   height: auto;
+  margin-top: -30px;
+  padding: 0 30px;
+}
+
+@media only screen and (max-width: 991px) {
+  #about-image {
+    width: 50vw;
+  }
+}
+
+.about p {
+  padding: 0 30px;
 }
 
 /*FAQ section*/
+.section-title {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  border: 2px solid #272823
+  padding: 10px;
+  font-size: 50px;
+}
+
 .faq {
-  padding: 2rem;
+  padding: 0 2rem;
   text-align: left;
 }
 
@@ -115,7 +144,7 @@ h3{
 }
 
 .faq summary:hover {
-  transform: scale(1.10);
+  transform: scale(1.05);
   color: orange;
   border-color: orange;
 }
@@ -170,15 +199,8 @@ h3{
 }
 
 .hr {
-    border: 0;
-    height: 0;
-    border-top: 1px solid orange;
-    border-bottom: 1px solid orange);
+  border: 0;
+  height: 0;
+  border-top: 1px solid orange;
+  border-bottom: 1px solid orange);
 }
-
-.image { 
-float: left;
-height: 500px;
-width: 400px;
-}
-
