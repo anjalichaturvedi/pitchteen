@@ -1,86 +1,155 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>PitchTeen</title>
-    <!--Bootstrap CSS, helpful grid system-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-   <center>
-    <h1>PitchTeen</h1>
-    </center>
-    <div class="center">
-      <div class="typewriter">
-         <h3> Imagine. <span class="mobile-br"><br></span> Innovate. <span class="mobile-br"><br></span> Inspire. </h3>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>PitchTeen</title>
+      <!--Bootstrap CSS, helpful grid system-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+      <!--FontAwesome Icons-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+               <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item active dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               About
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#info">Pitchteen 2021</a>
+                  <a class="dropdown-item" href="#">Meet the Team</a>
+               </div>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="#">Sponsors</a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="#">Contact</a>
+            </li>
+         </ul>
       </div>
-    </div>
-    </div>
-    <div class="container">
-      <div class="row about">
-        <div class="col-lg-6 col-md-12 col-sm-12">
-          <div class="center" style="width:100%; /*for proper image centering/scaling*/">
-            <img src="images/bg.jpg" alt="Img" id="about-image">
+   </nav>
+   <body>
+      <div class="page-title">
+         <h1>PitchTeen</h1>
+      </div>
+      <div class="center">
+         <div class="typewriter">
+            <h3> Imagine. <span class="mobile-br"><br></span> Innovate. <span class="mobile-br"><br></span> Inspire. </h3>
+         </div>
+      </div>
+      <div class="container" id="about">
+         <div class="row about">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+               <div class="center" style="width:100%; /*for proper image centering/scaling*/">
+                  <img src="images/bg.jpg" alt="Img" id="about-image">
+               </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+               <h3>What is PitchTeen?</h3>
+               <p>PitchTeen is a tech startup based competition that is absolutely virtual and accessible to all teenagers around the globe. This event provides opportunities for participants to showcase their entrepreneurial skills.</p>
+               <br>
+               <h3>What will participants be doing?</h3>
+               <p>Teams of 1-4 will develop a startup idea and learn how to develop their business plan. </p>
+               <br>
+               <h3>Get Involved</h3>
+               <div class="get-involved">
+                  <button class="btn btn-outline-primary" type="button">
+                  <i class="far fa-file-alt"></i>&nbsp
+                  <a href="#">Register</a>
+                  </button>
+                  <button class="btn btn-outline-primary" type="button">
+                  <i class="fas fa-user-friends"></i>&nbsp
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZ-ZC6nRd-YdACP0giRi9t4drNmTMed2T86iEHZzcfsCj_iA/viewform">Join our team</a>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+        <div class="row info" id="info">
+          <div class="section-title">
+             <h2> PitchTeen 2021 Event </h2>
+             <div class="hr">
+             </div>
           </div>
-        </div>
-        <div class="col-lg-6 col-md-12 col-sm-12">
-          <h3>What is PitchTeen?</h3>
-          <p>PitchTeen is a tech startup based competition that is absolutely virtual and accessible to all teenagers from the globe. This event provides opportunities for participants to showcase their entrepreneurial skills.</p>
+          <div class="get-involved">
+            <p>Who: high school students (ages 14-18 by event)</p>
+            <p>What: entrepreneurship & pitch competition</p>
+            <p>Where: online</p>
+            <p>When: January 2nd-10th, 2021</p>
+            <p>Why: gain experience, win prizes, learn the startup process, work on business skills.</p>
+            <p>More details coming soon.</p>
+          </div>
           <br>
-          <h3>What will participants be doing?</h3>
-          <p>Teams of 1-4 will develop a startup idea and learn how to develop their business plan. </p>
         </div>
       </div>
-    </div>
-
-    <div class="container">
-      <div class="row faq">
-        <div class="section-title">
-          <h2> Questions & Answers </h2>
-          <div class="hr">
-            <hr>
-          </div>
-        </div>
-        <br>
-        <div class="col-lg-4 col-md-12">
-          <details>
-             <summary>How do I sign up?</summary>
-             <p>Applications will be open soon.</p>
-          </details>
-          <details>
-             <summary>What if I don't have a team before the event?</summary>
-             <p>We will try our best to place you into existing teams, and give you time to form a new one with others if necessary.</p>
-          </details>
-        </div>
-        <div class="col-lg-4 col-md-12">
-          <details>
-             <summary>Where will the competition take place?</summary>
-             <p>We're planning to hold the pitch competition entirely online. More details later.
-             </p>
-          </details>
-          <details>
-             <summary>Who is eligibile to compete?</summary>
-             <p>PitchTeen is open to all high school students, age 14-18.</p>
-          </details>
-        </div>
-        <div class="col-lg-4 col-md-12">
-          <details>
-             <summary>Is PitchTeen free?</summary>
-             <p>More on this later.</p>
-          </details>
-          <details>
-             <summary>Will there be prizes awarded to winners?</summary>
-             <p>Again, more on this later.</p>
-          </details>
-        </div>
+      <div class="container">
+         <div class="row faq" id="faq">
+            <div class="section-title">
+               <h2> Questions & Answers </h2>
+               <div class="hr">
+               </div>
+            </div>
+            <br>
+            <div class="col-lg-4 col-md-12">
+               <details>
+                  <summary>How do I sign up?</summary>
+                  <p>Applications will be open soon. See above.</p>
+               </details>
+               <details>
+                  <summary>What if I don't have a team before the event?</summary>
+                  <p>We will try our best to place you into existing teams, and give you time to form a new one with others if necessary.</p>
+               </details>
+               <details>
+                  <summary>How can I stay connected during a virtual event?</summary>
+                  <p>If you're looking to make connections outside your team, we have a Slack community open.</p>
+               </details>
+            </div>
+            <div class="col-lg-4 col-md-12">
+               <details>
+                  <summary>Where will the competition take place?</summary>
+                  <p>We're planning to hold the pitch competition entirely online. More details later.
+                  </p>
+               </details>
+               <details>
+                  <summary>Who is eligibile to compete?</summary>
+                  <p>PitchTeen is open to all high school students, age 14-18.</p>
+               </details>
+               <details>
+                  <summary>How can I help organize the 2021 PitchTeen event?</summary>
+                  <p>We are accepting applications to operations, marketing, and tech positions. See above.</p>
+               </details>
+            </div>
+            <div class="col-lg-4 col-md-12">
+               <details>
+                  <summary>Is PitchTeen free?</summary>
+                  <p>More on this later.</p>
+               </details>
+               <details>
+                  <summary>Will there be prizes awarded to winners?</summary>
+                  <p>Again, more on this later.</p>
+               </details>
+               <details>
+                  <summary>What do I need to participate?</summary>
+                  <p>Stable internet connection, a mic/webcam, and a team. We will find a team for you if you do not form one upon registration.</p>
+               </details>
+            </div>
+         </div>
       </div>
-    </div>
-
-
-
-  </body>
+      <!--Bootstrap JS-->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   </body>
 </html>

@@ -8,10 +8,30 @@ body {
   letter-spacing: .15em;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  margin: -5em 0 5em;
+  background: #4b4d45;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-nav {
+  padding: 0 3em;
+}
+
+.navbar li a {
+  color: black;
+  font-weight: bold;
+}
+
 .container {
   /*Prevents content from stretching over-width on mobile*/
   overflow-x: hidden;
-  margin-top: 2em;
+  margin-top: 4em;
+  margin-bottom: 3em;
 }
 
 p {
@@ -37,6 +57,28 @@ h2 {
 
 h3{
   font-size: 20px;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+ text-decoration: underline;
+ text-decoration-color: orange;
+ color: white;
+}
+
+.page-title {
+  width: 100%;
+  text-align: center;
+}
+
+.section-title {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  padding: 10px;
 }
 
 .typewriter h3 {
@@ -78,6 +120,9 @@ h3{
   .center {
     width: 40%;
   }
+  .page-title {
+    width: 40%;
+  }
 }
 
 /* The typing effect */
@@ -86,20 +131,16 @@ h3{
   to { width: 100% }
 }
 
-.about {
-  margin-bottom: 2em;
-  margin-top: 3em;
-}
-
+/*About section*/
 .about h3 {
   text-transform: uppercase;
   padding: 0 30px;
 }
 
 #about-image {
-  width: 30vw;
+  width: 35vw;
   height: auto;
-  margin-top: -30px;
+  margin-top: -60px;
   padding: 0 30px;
 }
 
@@ -107,27 +148,38 @@ h3{
   #about-image {
     width: 50vw;
   }
+  .section-title {
+    width: 100%;
+  }
 }
 
 .about p {
   padding: 0 30px;
+  color: white;
 }
 
-/*FAQ section*/
-.section-title {
-  margin: auto;
-  width: 70%;
-  text-align: center;
-  border: 2px solid #272823
-  padding: 10px;
-  font-size: 50px;
-}
-
-.faq {
-  padding: 0 2rem;
+.get-involved {
+  padding: 0 30px;
+  margin: 1em 2em;
   text-align: left;
 }
 
+/*Info section*/
+.info {
+  border: 5px solid orange;
+}
+
+@media only screen and (max-width: 925px) {
+  .info .get-involved {
+    padding: 0;
+    margin: 0;
+  }
+  .info {
+    border: 0;
+  }
+}
+
+/*FAQ section*/
 .faq details {
   margin: 2rem;
   border-radius: 10px;
@@ -139,8 +191,9 @@ h3{
   padding: 20px;
   padding-left: 25px;
   font-size: 20px;
-  border: 2px solid white;
+  border: 1px solid white;
   transition-duration: 0.5s;
+  box-shadow: 0 10px 12px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .faq summary:hover {
@@ -179,28 +232,34 @@ h3{
   font-size: 17px;
 }
 
-.button {
-  margin: 25px 50px;
-  length: 100px;
-  width: 50px;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: flex;
-  font-size: 16px;
-  float:left;
-  margin-right: 50px;
-  margin-left: 50px;
+.btn-outline-primary {
+  box-shadow: 0 10px 12px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 0;
+  border-radius: 0;
+  color: white;
+  background-color: #202020;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 1em;
 }
 
+.btn-outline-primary:hover {
+  transform: scale(1.05);
+  background-color: #272823;
+}
 
-.button:hover {
-  transform: scale(1.10);
+.btn-outline-primary:active {
+  background-color: #272823 !important;
+  border: 0;
+  box-shadow: none;
+}
+
+.btn-outline-primary:focus {
+  border: 0;
+  box-shadow: none;
 }
 
 .hr {
-  border: 0;
-  height: 0;
   border-top: 1px solid orange;
   border-bottom: 1px solid orange);
 }
