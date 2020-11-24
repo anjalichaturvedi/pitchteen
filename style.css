@@ -14,8 +14,10 @@ html {
 
 .navbar {
   margin: -5em 0 5em;
-  background: #4b4d45;
+  background-color: transparent;
   font-family: 'Montserrat', sans-serif;
+  float: right;
+
 }
 
 .navbar-nav {
