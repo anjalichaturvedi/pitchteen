@@ -16,8 +16,6 @@ html {
   margin: -5em 0 5em;
   background-color: transparent;
   font-family: 'Montserrat', sans-serif;
-  float: right;
-
 }
 
 .navbar-nav {
@@ -27,6 +25,28 @@ html {
 .navbar li a {
   color: black;
   font-weight: bold;
+}
+
+/*.navbar.sticky-top.scrolled {
+  background-color: #4b4d45 !important; !important;
+  transition: background-color 200ms linear;
+}*/
+
+.navbar.sticky-top.scrolled {
+  background-color: #4b4d45 !important;
+  background-size: 400% 400%;
+  -webkit-animation: fade-nav 30s ease 1s;
+  animation: fade-nav 30s ease 1s;
+  transition: background-color 500ms linear;
+}
+
+@-webkit-keyframes fade-nav {
+    0%{background-position:0% 0%}
+    100%{background-position:100% 50%}
+}
+@keyframes fade-nav {
+    0%{background-position:0% 0%}
+    100%{background-position:100% 50%}
 }
 
 .container {
@@ -120,9 +140,6 @@ a:hover {
     font-size: 9vw;
   }
   .center {
-    width: 40%;
-  }
-  .page-title {
     width: 40%;
   }
 }
