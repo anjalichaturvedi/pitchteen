@@ -188,6 +188,10 @@ a:hover {
   border: 5px solid orange;
 }
 
+.info .get-involved {
+  margin: 1em auto;
+}
+
 @media only screen and (max-width: 925px) {
   .info .get-involved {
     padding: 0;
