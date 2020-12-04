@@ -6,6 +6,7 @@ body {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: .15em;
+  margin: 0px;
 }
 
 html {
@@ -285,4 +286,8 @@ a:hover {
 .hr {
   border-top: 1px solid orange;
   border-bottom: 1px solid orange);
+}
+
+.sponsors img {;
+ margin: 0 10px 0 10px;
 }
