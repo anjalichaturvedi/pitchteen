@@ -87,7 +87,7 @@ a {
 
 a:hover {
  text-decoration: underline;
- text-decoration-color: orange;
+ text-decoration-color: #FFD390;
  color: white;
 }
 
@@ -107,7 +107,7 @@ a:hover {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typewriter cursor */
+  border-right: .15em solid #FFD390; /* The typewriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0px auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
@@ -124,7 +124,7 @@ a:hover {
 
 .center {
   margin: 0 auto;
-  width: 30vw;
+  width: 25vw;
   text-align: center;
   border: 1px solid #272823;
   padding: 7px;
@@ -185,7 +185,7 @@ a:hover {
 
 /*Info section*/
 .info {
-  border: 5px solid orange;
+  border: 5px solid #FFD390;
 }
 
 .info .get-involved {
@@ -221,8 +221,8 @@ a:hover {
 
 .faq summary:hover {
   transform: scale(1.05);
-  color: orange;
-  border-color: orange;
+  color: #FFD390;
+  border-color: #FFD390;
 }
 
 .faq summary:focus {
@@ -283,8 +283,8 @@ a:hover {
 }
 
 .hr {
-  border-top: 1px solid orange;
-  border-bottom: 1px solid orange;
+  border-top: 1px solid #FFD390;
+  border-bottom: 1px solid #FFD390;
 }
 
 /*Sponsors section*/
@@ -308,7 +308,7 @@ a:hover {
 /*Footer*/
 footer {
   text-align: center;
-  background-color: #FFD390;
+  background-color:#FFD390;
   margin-bottom: 0px;
   height: 8.6em;
 }
