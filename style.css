@@ -57,7 +57,7 @@ html {
 }
 
 p {
-  font-size: 16px;
+  font-size: 17px;
   margin: 1em 2em;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: .10em;
@@ -308,17 +308,20 @@ a:hover {
 /*Footer*/
 footer {
   text-align: center;
-  background-color: #FEF4AC;
-  margin-bottom: -200px;
-  height: 5em;
+  background-color: orange;
+  margin-bottom: 0px;
+  height: 8.6em;
 }
 
 .contact {
-  padding: 15px;
+  padding: 5px;
 }
 
 .contact a {
-  color: black;
-  font-weight: bold;
-  margin-top: 30px;
+  color: white;
+  margin-top: 10px;
+}
+
+.contact a:hover {
+  text-decoration: underline;
 }
