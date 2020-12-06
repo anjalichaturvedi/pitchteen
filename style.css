@@ -161,6 +161,7 @@ a:hover {
   max-width: 600px;
   height: auto;
   padding: 0 30px 50px;
+  margin: auto 0;
 }
 
 @media only screen and (max-width: 991px) {
@@ -185,11 +186,26 @@ a:hover {
 
 /*Info section*/
 .info {
-  border: 5px solid #FFD390;
+  border: 5px solid#FFD390;
+  padding-bottom: 2em;
 }
 
 .info .get-involved {
-  margin: 1em auto;
+  margin-top: 0;
+}
+
+.info h3 {
+  text-transform: uppercase;
+  padding: 0 30px;
+}
+
+.info p {
+  padding: 0 30px;
+  color: white;
+}
+
+.info-details {
+  margin-top: 1em;
 }
 
 @media only screen and (max-width: 925px) {
@@ -297,7 +313,6 @@ a:hover {
  max-width: 135px;
  height: auto;
  transition-duration: 0.5s;
- z-index: 999;
  padding: 10px 0 ;
 }
 
@@ -309,7 +324,6 @@ a:hover {
 footer {
   text-align: center;
   background-color:#FFD390;
-  margin-bottom: 0px;
   height: 8.6em;
 }
 
@@ -318,10 +332,21 @@ footer {
 }
 
 .contact a {
-  color: white;
+  color:black;
   margin-top: 10px;
+  padding: 5px;
 }
 
-.contact a:hover {
-  text-decoration: underline;
+.contact p {
+  color: black;
+  margin-top: 20px;
+}
+
+.contact a i:hover {
+  color: orange;
+}
+
+.contact i {
+  padding-left: 10px;
+  font-size: 25px;
 }
