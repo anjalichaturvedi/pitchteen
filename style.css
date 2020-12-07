@@ -204,8 +204,31 @@ a:hover {
   color: white;
 }
 
+.info summary {
+  padding: 0 30px;
+  margin: 1em 2em;
+}
+
+.info .details-text {
+  padding: 0 30px;
+}
+
+.info-summary .get-involved {
+  padding-right: 0;
+  margin-right: 0;
+}
+
 .info-details {
   margin-top: 1em;
+}
+
+#info-image {
+  width: 20vw;
+  max-width: 300px;
+  height: auto;
+  margin: auto 0;
+  position: relative;
+  left: -20%;
 }
 
 @media only screen and (max-width: 925px) {
@@ -215,6 +238,12 @@ a:hover {
   }
   .info {
     border: 0;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .info-image-container {
+    display: none;
   }
 }
 
@@ -241,7 +270,7 @@ a:hover {
   border-color: #FFD390;
 }
 
-.faq summary:focus {
+summary:focus {
   outline: none;
 }
 
