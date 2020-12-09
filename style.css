@@ -346,8 +346,10 @@ summary:focus {
 
 .sponsors img {
  width: 8vw;
- max-width: 135px;
+ max-width: 135px; 
  height: auto;
+ margin: 0 auto;
+
  transition-duration: 0.5s;
  padding: 10px 0 ;
  box-shadow: 0 10px 10px -2px #272823, 0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -357,15 +359,25 @@ summary:focus {
   transform: scale(1.05);
 }
 
+@media only screen and (min-width: 768px) {
+  .sponsors .col-md-2 {
+    justify-content: center !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sponsors img {
+    width: 18vw;
+  }
+}
+
 /*Footer*/
 footer {
   text-align: center;
   background-color:#FFD390;
-  height: 8.6em;
-}
-
-.contact {
-  padding: 5px;
+  height: 100%;
+  padding: 10px 10px 20px;
+  margin-bottom: -10px;
 }
 
 .contact a {
