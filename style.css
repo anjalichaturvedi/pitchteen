@@ -360,15 +360,22 @@ summary:focus {
   transform: scale(1.05);
 }
 
-@media only screen and (min-width: 768px) {
-  .sponsors .col-md-2 {
+.sponsors img:focus {
+  outline: none;
+}
+
+/*@media only screen and (min-width: 768px) {
+  .sponsors .col-md-4 {
     justify-content: center !important;
   }
-}
+  .sponsors .col-md-3 {
+    justify-content: center !important;
+  }
+}*/
 
 @media only screen and (max-width: 768px) {
   .sponsors img {
-    width: 18vw;
+    width: 20vw;
   }
 }
 
