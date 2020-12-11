@@ -378,6 +378,38 @@ summary:focus {
     width: 20vw;
   }
 }
+/* partners */
+
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.partners img {
+ width: 8vw;
+ max-width: 135px; 
+ height: auto;
+ margin: 0 auto;
+ align: center;
+ transition-duration: 0.5s;
+ padding: 10px 0 ;
+ box-shadow: 0 10px 10px -2px #272823, 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.partners img:hover {
+  transform: scale(1.05);
+}
+
+.partners img:focus {
+  outline: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .partners img {
+    width: 20vw;
+  }
+}
 
 /*Footer*/
 footer {
