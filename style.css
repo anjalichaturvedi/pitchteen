@@ -360,7 +360,7 @@ summary:focus {
   transform: scale(1.05);
 }
 
-.sponsors img:focus {
+.sponsors div:focus {
   outline: none;
 }
 

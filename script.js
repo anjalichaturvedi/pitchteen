@@ -8,7 +8,7 @@ $(function () {
 
 $(document).ready(function(){
   $('.sponsors').slick({
-    slidesToShow: 5,
+    slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1300,
@@ -20,9 +20,6 @@ $(document).ready(function(){
           slidesToScroll: 2
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
 });
