@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(www\.)?subdomain\.example\.com$
+RewriteCond %{REQUEST_URI} !^/subdomain
+RewriteRule ^(.*)$ /subdomain/$1 [L]
